@@ -1,0 +1,32 @@
+{
+  "name": "hubspot-contact-capture",
+  "version": "1.0.0",
+  "description": "Lightweight HubSpot contact capture via the Contacts API v3. No HubSpot form required.",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "hubspot",
+    "contacts",
+    "lead-capture",
+    "crm"
+  ],
+  "author": "Kristian Carter",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.5.0"
+  }
+}
